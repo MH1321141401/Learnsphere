@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LearnSphere — Academic Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00f5a0"/><stop offset=".55" stop-color="#00d9f5"/><stop offset="1" stop-color="#2f7bff"/></linearGradient>
+</defs></svg>
+<div class="app" id="app">
+  <aside class="side" id="side">
+    <div class="brand"><span class="logo"></span><b>LearnSphere</b></div>
+    <nav id="nav"></nav>
+    <button class="collapse" data-act="collapse" title="Collapse sidebar">«</button>
+  </aside>
+  <div class="scrim" data-act="menu"></div>
+  <main class="main">
+    <header class="top">
+      <button class="icon burger" data-act="menu" aria-label="Menu">☰</button>
+      <h1 id="ptitle">Dashboard</h1>
+      <div class="grow"></div>
+      <a class="pill" id="tpill" href="#/timer" hidden></a>
+      <button class="btn sm" data-act="quickTask">+ Task</button>
+    </header>
+    <div id="view"></div>
+  </main>
+</div>
+<div id="modal" class="modal"></div>
+<div id="toast" class="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="store.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
